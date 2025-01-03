@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="product-container">
+        <section class="product-gallery">
+            <div class="main-image-container">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="main-image">
+                    <img src="" alt="Product Image" id="mainImage">
+                </div>
+                <button class="nav-btn next-btn">&gt;</button>
+            </div>
+            <div class="thumbnails" id="thumbnails"></div>
+        </section>
+
+        <section class="product-info">
+            <h1>Premium Wireless Headphones</h1>
+            <p class="price">$299.99</p>
+            
+            <div class="variant-selector">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-controls">
+                    <button class="qty-btn" id="decreaseQty">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button class="qty-btn" id="increaseQty">+</button>
+                </div>
+            </div>
+
+            <p class="description">
+                Experience premium sound quality with our wireless headphones. 
+                Featuring active noise cancellation, 30-hour battery life, and 
+                premium comfort for extended listening sessions.
+            </p>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <div class="confirmation-message" id="confirmationMessage"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
