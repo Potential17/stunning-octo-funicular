@@ -23,7 +23,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Gallery Styles */
+
 .product-gallery {
     width: 100%;
 }
@@ -97,7 +97,7 @@ body {
     object-fit: cover;
 }
 
-/* Product Info Styles */
+
 .product-info {
     padding: 1rem;
 }
@@ -180,7 +180,7 @@ h1 {
     color: #155724;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
     .product-container {
         grid-template-columns: 1fr;

@@ -64,7 +64,6 @@ class ProductGallery {
         this.prevBtn.addEventListener('click', () => this.navigate(-1));
         this.nextBtn.addEventListener('click', () => this.navigate(1));
 
-        // Touch events for mobile swipe
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -77,7 +76,7 @@ class ProductGallery {
             this.handleSwipe();
         });
 
-        // Quantity controls
+      
         document.getElementById('decreaseQty').addEventListener('click', () => {
             const input = document.getElementById('quantity');
             if (input.value > 1) input.value = parseInt(input.value) - 1;
@@ -88,7 +87,7 @@ class ProductGallery {
             if (input.value < 10) input.value = parseInt(input.value) + 1;
         });
 
-        // Add to cart button
+      
         document.querySelector('.add-to-cart-btn').addEventListener('click', this.handleAddToCart);
     }
 
@@ -98,9 +97,9 @@ class ProductGallery {
 
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0) {
-                this.navigate(-1); // Swipe right
+                this.navigate(-1); 
             } else {
-                this.navigate(1); // Swipe left
+                this.navigate(1); 
             }
         }
     }
@@ -124,7 +123,7 @@ class ProductGallery {
     }
 }
 
-// Initialize the gallery when the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', () => {
     new ProductGallery();
 });
